@@ -18,7 +18,6 @@ const NewMeetupFrom = ({ onAddMeetup }) => {
       description: descriptionRef.current.value,
     };
 
-    console.log(`meetupData = `, meetupData);
     onAddMeetup(meetupData);
   };
 

@@ -10,7 +10,6 @@ const AllMeetUp = () => {
       "https://react-get-start-42027-default-rtdb.asia-southeast1.firebasedatabase.app/meetups.json"
     )
       .then((res) => {
-        console.log(`before , res = `, res);
         return res.json();
       })
       .then((data) => {

@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 
 const NewMeetUp = () => {
   const history = useHistory();
-  console.log(`history = `, history);
 
   const addMeetupHandler = (meetupData) => {
     fetch(
@@ -16,8 +15,6 @@ const NewMeetUp = () => {
         },
       }
     ).then((res) => {
-      console.log(`res = `, res);
-
       history.replace("/");
     });
   };
